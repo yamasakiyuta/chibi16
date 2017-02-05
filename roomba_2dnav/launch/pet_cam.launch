@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+<!--node pkg="cv_camera" type="cv_camera_node" respawn="false" name="cv_camera_node" output="screen" launch-prefix="xterm -e "/-->
+<!--node pkg="cv_camera" type="cv_camera_node" name="cv_camera_node" launch-prefix="xterm -e "/-->
+
+<!--node pkg="pet_image" type="pet_image_node" respawn="false" name="pet_image_node" output="screen" launch-prefix="xterm -e "/-->
+<node pkg="pet_image" type="pet_image_node" name="pet_image_node" launch-prefix="xterm -e "/>
+<!--<node pkg="object_approach" type="object_approach_node" respawn="false" name="object_approach_node" output="screen"/>-->
+</launch>

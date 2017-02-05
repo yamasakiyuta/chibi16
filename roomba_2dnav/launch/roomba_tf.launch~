@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<launch>
+	<node pkg="tf" type="static_transform_publisher" name="odom_2_base_link" args="0 0 0 0 0 0 /odom /base_link 100"/>
+	<node pkg="tf" type="static_transform_publisher" name="base_link_2_base_frame_link" args="0 0 0 0 0 0 /base_link /base_frame 100"/>
+	<node pkg="tf" type="static_transform_publisher" name="base_frame_2_scanmatcher_frame" args="0 0 0 0 0 0 /base_frame /scanmatcher_frame 100"/>
+	<node pkg="tf" type="static_transform_publisher" name="base_frame_2_object_frame" args="0 0 0 0 0 0 /base_frame /object_frame 100"/><!---->
+
+
+</launch>

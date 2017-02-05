@@ -1,0 +1,5 @@
+To do list before cmake
+・install libmagick++-dev
+・install libzbar0 libzbar-dev libzbargtk-dev libzbarqt-dev libzbargtk0 libzbarqt0 
+
+you should install librarys, install this pkg completed

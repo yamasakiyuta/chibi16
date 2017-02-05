@@ -1,0 +1,235 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3686638483/fast"
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3686638483.dir/build.make CMakeFiles/cmTryCompileExec3686638483.dir/build
+make[2]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3686638483.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3686638483.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3686638483
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3686638483.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec3686638483.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3686638483 -rdynamic 
+CMakeFiles/cmTryCompileExec3686638483.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make[2]: *** [cmTryCompileExec3686638483] エラー 1
+make[2]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec3686638483/fast] エラー 2
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' から出ます
+
+File /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1593154248/fast"
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1593154248.dir/build.make CMakeFiles/cmTryCompileExec1593154248.dir/build
+make[2]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1593154248.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1593154248.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1593154248
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1593154248.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1593154248.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1593154248 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make[2]: *** [cmTryCompileExec1593154248] エラー 1
+make[2]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec1593154248/fast] エラー 2
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' から出ます
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: ld はステータス 1 で終了しました
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec] エラー 1
+make: *** [cmTryCompileExec/fast] エラー 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1872265724/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1872265724.dir/build.make CMakeFiles/cmTryCompileExec1872265724.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1872265724.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1872265724.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1872265724
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1872265724.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1872265724.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1872265724 -rdynamic 
+CMakeFiles/cmTryCompileExec1872265724.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1872265724] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec1872265724/fast] エラー 2
+
+File /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec158618870/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec158618870.dir/build.make CMakeFiles/cmTryCompileExec158618870.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec158618870.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec158618870.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec158618870
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec158618870.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec158618870.dir/CheckFunctionExists.c.o  -o cmTryCompileExec158618870 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec158618870] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec158618870/fast] エラー 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2370342893/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2370342893.dir/build.make CMakeFiles/cmTryCompileExec2370342893.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2370342893.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2370342893.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2370342893
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2370342893.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2370342893.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2370342893 -rdynamic 
+CMakeFiles/cmTryCompileExec2370342893.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec2370342893] エラー 1
+make: *** [cmTryCompileExec2370342893/fast] エラー 2
+
+File /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3545364497/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3545364497.dir/build.make CMakeFiles/cmTryCompileExec3545364497.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3545364497.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3545364497.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3545364497
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3545364497.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3545364497.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3545364497 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: error: ld returned 1 exit status
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec3545364497] エラー 1
+make: *** [cmTryCompileExec3545364497/fast] エラー 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec75267124/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec75267124.dir/build.make CMakeFiles/cmTryCompileExec75267124.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec75267124.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec75267124.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec75267124
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec75267124.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec75267124.dir/CheckSymbolExists.c.o  -o cmTryCompileExec75267124 -rdynamic 
+CMakeFiles/cmTryCompileExec75267124.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec75267124] エラー 1
+make: *** [cmTryCompileExec75267124/fast] エラー 2
+
+File /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1031038228/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1031038228.dir/build.make CMakeFiles/cmTryCompileExec1031038228.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1031038228.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1031038228.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1031038228
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1031038228.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1031038228.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1031038228 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: error: ld returned 1 exit status
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/roomba_robot_meiji/roomba_500driver_meiji/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec1031038228] エラー 1
+make: *** [cmTryCompileExec1031038228/fast] エラー 2
+
+

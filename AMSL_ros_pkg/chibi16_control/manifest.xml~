@@ -1,0 +1,18 @@
+<package>
+  <description brief="chibi12_control">
+
+     chibi12_control
+
+  </description>
+  <author>ganzo</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/chibi12_control</url>
+  <depend package="roscpp"/>
+  <depend package="rospy"/>
+  <depend package="roomba_500driver_meiji"/>
+  <rosdep name="eigen"/>
+  <depend package="tf"/>
+</package>
+
+

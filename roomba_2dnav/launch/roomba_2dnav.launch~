@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<launch>
+ <master auto="start"/> 
+
+  <include file="$(find roomba_2dnav)/launch/hector_hokuyo.launch"/>
+
+  <include file="$(find roomba_2dnav)/launch/roomba_tf.launch"/>
+
+ <!-- Run the map server --> 
+ <node name="map_server" pkg="map_server" type="map_server" args="$(find roomba_2dnav)/maps/test4_map.yaml"/> 
+ 
+ <!--- Run AMCL -->    
+ <include file="$(find roomba_2dnav)/launch/roomba_amcl_param.launch" />
+
+ <!--- Run move_base -->    
+ <include file="$(find roomba_2dnav)/launch/roomba_move_base.launch" />
+  
+ <node pkg="roomba_500driver_meiji" type="roomba_500driver_meiji" respawn="false" name="roomba_500driver_meiji"/>
+ 
+ <node pkg="chibi16_control" type="chibi16_control" respawn="false" name="chibi16_control"  output="screen"/>
+ 
+
+</launch>

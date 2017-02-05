@@ -1,0 +1,9 @@
+<launch>
+	<node pkg = "urg_node" name = "urg_node" type = "urg_node" />
+	<node pkg = "joy" name = "joy_node" type = "joy_node" />
+	<node pkg = "roomba_teleop_meiji" name = "roomba_electric_joystick_drive" type = "roomba_electric_joystick_drive" />
+	<node pkg = "roomba_500driver_meiji" name = "roomba_500driver_meiji" type = "roomba_500driver_meiji" />
+	<node pkg = "chibi14_control" name = "node_decider" type = "node_decider" />
+	<node pkg = "chibi14_control" name = "roomba_node_manager" type = "roomba_node_manager" />
+	<include file="$(find hector_slam_launch)/launch/hector_slam_msd.launch" />
+</launch>

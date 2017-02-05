@@ -1,0 +1,735 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4203957432/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4203957432.dir/build.make CMakeFiles/cmTryCompileExec4203957432.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4203957432.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4203957432.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec4203957432
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4203957432.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec4203957432.dir/CheckSymbolExists.c.o  -o cmTryCompileExec4203957432 -rdynamic 
+CMakeFiles/cmTryCompileExec4203957432.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make[1]: *** [cmTryCompileExec4203957432] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec4203957432/fast] エラー 2
+
+File /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3288279840/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3288279840.dir/build.make CMakeFiles/cmTryCompileExec3288279840.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3288279840.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3288279840.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3288279840
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3288279840.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3288279840.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3288279840 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make[1]: *** [cmTryCompileExec3288279840] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec3288279840/fast] エラー 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec660615011/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec660615011.dir/build.make CMakeFiles/cmTryCompileExec660615011.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec660615011.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec660615011.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec660615011
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec660615011.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec660615011.dir/CheckSymbolExists.c.o  -o cmTryCompileExec660615011 -rdynamic 
+CMakeFiles/cmTryCompileExec660615011.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make[1]: *** [cmTryCompileExec660615011] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec660615011/fast] エラー 2
+
+File /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4022580510/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4022580510.dir/build.make CMakeFiles/cmTryCompileExec4022580510.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4022580510.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec4022580510.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4022580510
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4022580510.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec4022580510.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4022580510 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make[1]: *** [cmTryCompileExec4022580510] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec4022580510/fast] エラー 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2857658615/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2857658615.dir/build.make CMakeFiles/cmTryCompileExec2857658615.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2857658615.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2857658615.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2857658615
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2857658615.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec2857658615.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2857658615 -rdynamic 
+CMakeFiles/cmTryCompileExec2857658615.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make[1]: *** [cmTryCompileExec2857658615] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec2857658615/fast] エラー 2
+
+File /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2658164311/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2658164311.dir/build.make CMakeFiles/cmTryCompileExec2658164311.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2658164311.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2658164311.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2658164311
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2658164311.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2658164311.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2658164311 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make[1]: *** [cmTryCompileExec2658164311] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec2658164311/fast] エラー 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3377839405/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3377839405.dir/build.make CMakeFiles/cmTryCompileExec3377839405.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3377839405.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3377839405.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3377839405
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3377839405.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec3377839405.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3377839405 -rdynamic 
+CMakeFiles/cmTryCompileExec3377839405.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make[1]: *** [cmTryCompileExec3377839405] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec3377839405/fast] エラー 2
+
+File /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2302654293/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2302654293.dir/build.make CMakeFiles/cmTryCompileExec2302654293.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2302654293.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2302654293.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2302654293
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2302654293.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2302654293.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2302654293 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make[1]: *** [cmTryCompileExec2302654293] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec2302654293/fast] エラー 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3098022285/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3098022285.dir/build.make CMakeFiles/cmTryCompileExec3098022285.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3098022285.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3098022285.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3098022285
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3098022285.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec3098022285.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3098022285 -rdynamic 
+CMakeFiles/cmTryCompileExec3098022285.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make[1]: *** [cmTryCompileExec3098022285] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec3098022285/fast] エラー 2
+
+File /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1126240661/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1126240661.dir/build.make CMakeFiles/cmTryCompileExec1126240661.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1126240661.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1126240661.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1126240661
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1126240661.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1126240661.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1126240661 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make[1]: *** [cmTryCompileExec1126240661] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec1126240661/fast] エラー 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1393930122/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1393930122.dir/build.make CMakeFiles/cmTryCompileExec1393930122.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1393930122.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1393930122.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1393930122
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1393930122.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec1393930122.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1393930122 -rdynamic 
+CMakeFiles/cmTryCompileExec1393930122.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make[1]: *** [cmTryCompileExec1393930122] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec1393930122/fast] エラー 2
+
+File /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3487466399/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3487466399.dir/build.make CMakeFiles/cmTryCompileExec3487466399.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3487466399.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3487466399.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3487466399
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3487466399.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3487466399.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3487466399 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make[1]: *** [cmTryCompileExec3487466399] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec3487466399/fast] エラー 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1425801975/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1425801975.dir/build.make CMakeFiles/cmTryCompileExec1425801975.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1425801975.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1425801975.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1425801975
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1425801975.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec1425801975.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1425801975 -rdynamic 
+CMakeFiles/cmTryCompileExec1425801975.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make[1]: *** [cmTryCompileExec1425801975] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec1425801975/fast] エラー 2
+
+File /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2004536734/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2004536734.dir/build.make CMakeFiles/cmTryCompileExec2004536734.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2004536734.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2004536734.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2004536734
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2004536734.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2004536734.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2004536734 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make[1]: *** [cmTryCompileExec2004536734] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/zbar_barcode_reader/trunk/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec2004536734/fast] エラー 2
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/barcode_reader/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/barcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/barcode_reader/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: ld はステータス 1 で終了しました
+make[1]: *** [cmTryCompileExec] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/barcode_reader/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec/fast] エラー 2
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: ld はステータス 1 で終了しました
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec] エラー 1
+make: *** [cmTryCompileExec/fast] エラー 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3803560262/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3803560262.dir/build.make CMakeFiles/cmTryCompileExec3803560262.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3803560262.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3803560262.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3803560262
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3803560262.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3803560262.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3803560262 -rdynamic 
+CMakeFiles/cmTryCompileExec3803560262.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3803560262] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec3803560262/fast] エラー 2
+
+File /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec108460471/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec108460471.dir/build.make CMakeFiles/cmTryCompileExec108460471.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec108460471.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec108460471.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec108460471
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec108460471.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec108460471.dir/CheckFunctionExists.c.o  -o cmTryCompileExec108460471 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec108460471] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec108460471/fast] エラー 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4212488621/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4212488621.dir/build.make CMakeFiles/cmTryCompileExec4212488621.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4212488621.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4212488621.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec4212488621
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4212488621.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec4212488621.dir/CheckSymbolExists.c.o  -o cmTryCompileExec4212488621 -rdynamic 
+CMakeFiles/cmTryCompileExec4212488621.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec4212488621] エラー 1
+make: *** [cmTryCompileExec4212488621/fast] エラー 2
+
+File /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3613418001/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3613418001.dir/build.make CMakeFiles/cmTryCompileExec3613418001.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3613418001.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3613418001.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3613418001
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3613418001.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3613418001.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3613418001 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: error: ld returned 1 exit status
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec3613418001] エラー 1
+make: *** [cmTryCompileExec3613418001/fast] エラー 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1132915110/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1132915110.dir/build.make CMakeFiles/cmTryCompileExec1132915110.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1132915110.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1132915110.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1132915110
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1132915110.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1132915110.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1132915110 -rdynamic 
+CMakeFiles/cmTryCompileExec1132915110.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1132915110] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec1132915110/fast] エラー 2
+
+File /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec853961613/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec853961613.dir/build.make CMakeFiles/cmTryCompileExec853961613.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec853961613.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec853961613.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec853961613
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec853961613.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec853961613.dir/CheckFunctionExists.c.o  -o cmTryCompileExec853961613 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: error: ld returned 1 exit status
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec853961613] エラー 1
+make: *** [cmTryCompileExec853961613/fast] エラー 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec197485939/fast"
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/make -f CMakeFiles/cmTryCompileExec197485939.dir/build.make CMakeFiles/cmTryCompileExec197485939.dir/build
+make[2]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec197485939.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec197485939.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec197485939
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec197485939.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec197485939.dir/CheckSymbolExists.c.o  -o cmTryCompileExec197485939 -rdynamic 
+CMakeFiles/cmTryCompileExec197485939.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+make[2]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make[2]: *** [cmTryCompileExec197485939] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec197485939/fast] エラー 2
+
+File /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4197840654/fast"
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4197840654.dir/build.make CMakeFiles/cmTryCompileExec4197840654.dir/build
+make[2]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4197840654.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec4197840654.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4197840654
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4197840654.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec4197840654.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4197840654 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: error: ld returned 1 exit status
+make[2]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make[2]: *** [cmTryCompileExec4197840654] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec4197840654/fast] エラー 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec596143625/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec596143625.dir/build.make CMakeFiles/cmTryCompileExec596143625.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec596143625.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec596143625.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec596143625
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec596143625.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec596143625.dir/CheckSymbolExists.c.o  -o cmTryCompileExec596143625 -rdynamic 
+CMakeFiles/cmTryCompileExec596143625.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec596143625] エラー 1
+make: *** [cmTryCompileExec596143625/fast] エラー 2
+
+File /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3543460197/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3543460197.dir/build.make CMakeFiles/cmTryCompileExec3543460197.dir/build
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3543460197.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3543460197.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3543460197
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3543460197.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3543460197.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3543460197 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3543460197] エラー 1
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make: *** [cmTryCompileExec3543460197/fast] エラー 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3163723656/fast"
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3163723656.dir/build.make CMakeFiles/cmTryCompileExec3163723656.dir/build
+make[2]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3163723656.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3163723656.dir/CheckSymbolExists.c.o   -c /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3163723656
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3163723656.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3163723656.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3163723656 -rdynamic 
+CMakeFiles/cmTryCompileExec3163723656.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x16): `pthread_create' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+make[2]: *** [cmTryCompileExec3163723656] エラー 1
+make[2]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec3163723656/fast] エラー 2
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+
+File /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec760081259/fast"
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/make -f CMakeFiles/cmTryCompileExec760081259.dir/build.make CMakeFiles/cmTryCompileExec760081259.dir/build
+make[2]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' に入ります
+/usr/bin/cmake -E cmake_progress_report /home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec760081259.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec760081259.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec760081259
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec760081259.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec760081259.dir/CheckFunctionExists.c.o  -o cmTryCompileExec760081259 -rdynamic -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: error: ld returned 1 exit status
+make[2]: *** [cmTryCompileExec760081259] エラー 1
+make[2]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make[1]: ディレクトリ `/home/amsl/AMSL_ros_pkg/qrcode_reader/CMakeFiles/CMakeTmp' から出ます
+make[1]: *** [cmTryCompileExec760081259/fast] エラー 2
+
+

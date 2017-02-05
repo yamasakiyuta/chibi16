@@ -1,0 +1,4 @@
+<launch>
+<node pkg = "chibi14_control" name  = "chibi14_control" type = "chibi14_control"/>
+<node pkg = "roomba_500driver_meiji" name = "roomba_500driver_meiji" type = "roomba_500driver_meiji"/>
+</launch>
