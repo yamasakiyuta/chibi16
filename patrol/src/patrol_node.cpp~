@@ -1,0 +1,133 @@
+#include <ros/ros.h>
+#include <move_base_msgs/MoveBaseAction.h>
+//#include <move_base_msgs/MoveBaseActionGoal.h>
+#include <actionlib/client/simple_action_client.h>
+#include<geometry_msgs/PoseWithCovarianceStamped.h>
+#include "std_msgs/Int16.h"
+
+typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
+geometry_msgs::PoseWithCovarianceStamped init_pose;
+geometry_msgs::PoseWithCovarianceStamped roomba_amcl_pose;
+std_msgs::Int16 QR_flag;
+
+void init_pose_Callback(const geometry_msgs::PoseWithCovarianceStampedConstPtr& msg)
+{
+         init_pose=*msg;
+}
+
+void amcl_poseCallback(const geometry_msgs::PoseWithCovarianceStampedConstPtr& msg)
+{
+        roomba_amcl_pose=*msg;
+}
+
+void QR_flagCallback(const std_msgs::Int16ConstPtr& msg)
+{
+        QR_flag=*msg;
+}
+
+int main(int argc, char** argv){
+  ros::init(argc, argv, "patrol");
+  int count=0;
+  
+  ros::NodeHandle nh;
+  ros::NodeHandle n;
+  ros::NodeHandle n_amcl;
+  ros::NodeHandle n_qr;
+  ros::NodeHandle n_servo;
+  ros::NodeHandle n_goal;
+
+  ros::Subscriber initialpose_sub = nh.subscribe("/initialpose",1,init_pose_Callback);
+  
+  ros::Subscriber roomba_amcl_pose_sub = n_amcl.subscribe("/amcl_pose",100,amcl_poseCallback);
+
+  ros::Subscriber QR_flag_sub = n_qr.subscribe("/arm_comp", 100, QR_flagCallback);
+ 
+  ros::Publisher initialpose_pub = n.advertise<geometry_msgs::PoseWithCovarianceStamped>("/initialpose",1);
+  
+  ros::Publisher servo_pub = n_servo.advertise<std_msgs::Int16>("/servo",1);
+  
+  ros::Publisher goal_pub = n_goal.advertise<std_msgs::Int16>("/first_lap_goal",1);
+  
+  geometry_msgs::PoseWithCovarianceStamped roomba_initialpose;
+  std_msgs::Int16 first_lap_goal;
+  first_lap_goal.data=1;
+  
+  roomba_initialpose.header.frame_id = "map";
+  roomba_initialpose.header.stamp = ros::Time::now();
+  
+
+  geometry_msgs::PoseWithCovarianceStamped waypoint[10];
+  std_msgs::Int16 servo;
+  servo.data=2;
+
+  //tell the action client that we want to spin a thread by default
+  MoveBaseClient ac("move_base", true);
+
+  //wait for the action server to come up
+  while(!ac.waitForServer(ros::Duration(5.0))&&ros::ok()){
+    ROS_INFO("Waiting for the move_base action server to come up");
+  }
+
+  roomba_initialpose=roomba_amcl_pose;
+  roomba_initialpose.pose.pose.position.x=-5.5;
+  roomba_initialpose.pose.pose.position.y=5.0;
+  roomba_initialpose.pose.pose.orientation.z=-0.7;
+ // roomba_initialpose.pose.covariance=[0.25,0.0,0.0,0.0,0.0,0.0,0.0,0.25,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06853891945200942];
+//  initialpose_pub.publish(roomba_initialpose);
+  int num=3;
+  move_base_msgs::MoveBaseGoal goal;
+  move_base_msgs::MoveBaseGoal patrol[4];
+
+  goal.target_pose.header.frame_id = "map";
+  goal.target_pose.header.stamp = ros::Time::now();
+ 
+  ros::Rate rate_flag(10.0);
+/*  while(ros::ok()){
+	if(QR_flag.data==1)break;
+  	ros::spinOnce();
+	rate_flag.sleep();
+  }*/	
+  //goal.target_pose.pose=init_pose.pose.pose;
+  patrol[0].target_pose.pose.position.x = -3.0;
+  patrol[0].target_pose.pose.position.y = 1.5;
+  patrol[0].target_pose.pose.orientation.w = 1.0;
+  
+  patrol[1].target_pose.pose.position.x = -3.0;
+  patrol[1].target_pose.pose.position.y =0.5;
+  patrol[1].target_pose.pose.orientation.w = 1.0;
+  
+  patrol[2].target_pose.pose.position.x = -6.5;
+  patrol[2].target_pose.pose.position.y = 1.0;
+  patrol[2].target_pose.pose.orientation.w = 1.0;
+  
+  patrol[3].target_pose.pose.position.x = -6.0;
+  patrol[3].target_pose.pose.position.y = 5.0;
+  patrol[3].target_pose.pose.orientation.w = 1.0;
+
+  goal.target_pose.pose=patrol[0].target_pose.pose;
+
+  ros::Rate rate(10.0);
+
+while(ros::ok()){
+  ROS_INFO("Sending goal %d",count);
+  ac.sendGoal(goal);
+  ac.waitForResult();
+  
+  if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED){
+	ROS_INFO("Succeeded goal %d",count);
+	waypoint[count]=roomba_amcl_pose;
+	//servo_pub.publish(servo);
+	if(count==3){
+		goal_pub.publish(first_lap_goal);
+		break;
+	}
+	count++;
+	goal.target_pose.pose=patrol[count].target_pose.pose;
+  }
+  else  ROS_INFO("The base failed to move");
+  ros::spinOnce();
+  rate.sleep();
+  
+  }
+  return 0;
+}
